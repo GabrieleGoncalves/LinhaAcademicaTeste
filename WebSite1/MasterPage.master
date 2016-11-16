@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <style>
+        
+    </style>
+    <title></title>
+     <script src="../Js/bootstrap.min.js"></script>
+    <link href="../Css/bootstrap.min.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <div style="background-color:#0933ae;>
+    <header class="jumbotron"  >
+
+        <div class="container"  >
+           <div class="col-lg-12">
+               <div class="col-lg-2">
+          <img src="../../Imagens/logo.png" alt="Linha Acadêmica" style="height: 127px; width: 216px" />
+                
+           </div>
+               <div class="col-lg-4" >
+                   
+                  
+                   
+               </div>
+              
+               <div class="col-lg-6">
+                   <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+                           
+               </div>
+
+      </div>
+        
+       </div>
+     
+    </header>
+        </div>
+    <nav>
+        <table style="width:100%;">
+              <tr class="navbar-btn">
+                <div class="col-lg-2">
+                  <td class="btn col-md-2 btn bg-success" style="color:#000000;"><a href=" /../Paginas/Home.aspx">Home</a></td>
+                    </div>
+                <div class="col-lg-2">
+                  <td class="btn col-md-2 btn bg-success" style="color:#000000;"><a href=" /../Paginas/PesquisarCurso.aspx">Cursos</a></td>
+                    
+               
+                </div>
+                <div class="col-lg-2">
+                  <td  class="btn col-md-2 btn bg-success">Mini-Cursos</td>
+                    </div>
+                <div class="col-lg-2">
+ 
+                  <td class="btn col-md-2 btn bg-success">Palestras</td>
+                    </div>
+                <div class="col-lg-2">
+ 
+                  <td class="btn col-md-2 btn bg-success">Conferências</td>
+                    </div>
+                <div class="col-lg-2">
+ 
+                  <td class="btn col-md-2 btn bg-success">Outros Eventos</td>
+                    </div>
+
+              </tr>
+          </table>
+    </nav>
+
+    
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+         
+
+         
+      <footer>
+          
+        <div class="col-lg-12   col-xs-12 " style="background-color:#0933ae; top: 170px; left: 0px; "text-center">
+            <div class="col-lg-12  col-xs-12 " >
+                <div class="col-lg-2  col-xs-2  ">
+                    <h4  style="color: #ffffff; style="color:#000000;">Contato</h4>
+            </div>
+                <div class="col-lg-2  col-xs-2">
+                   <a style="color: #ffffff; href="/" style="color:#000000;"><h4>Termos de Uso</h4></a>
+            </div>
+                <div class="col-lg-3 col-xs-3  ">
+                    <a style="color: #ffffff; href="/" style="color:#000000;"><h4> Privacidade Política </h4></a>
+            </div>
+                <div class="col-lg-2  col-xs-2">
+                   <a  style="color: #ffffff;href="/" style="color:#000000;"><h4> Quem Somos </h4></a>
+            </div>
+                <div class="col-lg-3  col-xs-3 ">
+                   <img  src="/../Imagens/logo.png" width="150" height="100" alt="Events Academy" />
+                   
+
+            </div>
+            </div>
+               
+        </address>
+    </footer>
+        </div>
+        </form>
+</body>
+</html>
